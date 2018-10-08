@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backpack</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
+</head>
+<body>
+    <h1 class="uk-margin-medium-left uk-margin-medium-right uk-heading-line "><span>Backpack</span></h1>
+    <div uk-grid>
+        <div class="uk-width-expand@m">
+            <div class="uk-card uk-card-primary uk-card-body uk-margin-medium-right uk-margin-medium-left">
+                <form>
+                    <div class="uk-margin" uk-margin>
+                        <div uk-form-custom="target: true">
+                            <input type="file">
+                            <input class="uk-input uk-form-width-medium" type="text" accept="video/*" placeholder="Select file">
+                        </div>
+                        <button class="uk-button uk-button-secondary" type="submit">Get Info</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+        <div class="uk-card-badge uk-label"></div>
+        <h3 class="uk-card-title">Todos</h3>
+        <ul class="uk-list uk-list-divider"></ul>
+    </div>
+    <!-- This is the modal -->
+    <div id="modal-example" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title">Durée</h2>
+            <p></p>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Fermer</button>
+            </p>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
